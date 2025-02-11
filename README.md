@@ -16,3 +16,13 @@ uv pip sync requirements.txt
 # Or fresh install 
 uv pip install -U numpy polars wandb torch matplotlib scienceplots
 ```
+
+## Generate data
+
+```bash
+cd data
+cargo run --release
+```
+
+![data](data/data_plot.png)
+
