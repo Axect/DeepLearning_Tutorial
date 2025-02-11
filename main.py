@@ -93,7 +93,7 @@ if __name__ == "__main__":
         fig, ax = plt.subplots()
         ax.plot(x_data, y_data, '.', label="Data", color='blue', markersize=2, markeredgewidth=0, alpha=0.5)
         ax.plot(x_true, y_true, label="True", color='red')
-        ax.plot(x_test, y_test, '--', label="Predicted", color='green')
+        ax.plot(x_test, y_test, '--', label="Predicted", color='orange')
         ax.legend()
         ax.set_xlabel("x")
         ax.set_ylabel("y")
