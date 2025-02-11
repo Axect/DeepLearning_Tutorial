@@ -4,7 +4,7 @@ import numpy as np
 
 def split_data(df, ratio=0.8):
     """
-    Split the data into training and testing sets.
+    Split the data into training and validating sets.
     """
     length = len(df)
     ics = np.random.choice(length, int(length * ratio), replace=False)
@@ -18,12 +18,12 @@ if __name__ == "__main__":
     df = pl.read_parquet("data/data.parquet")
 
     # Split the data
-    train, test = split_data(df)
+    train, val = split_data(df)
 
     # Save the data
     train.write_parquet("data/train.parquet")
-    test.write_parquet("data/test.parquet")
+    val.write_parquet("data/val.parquet")
 
     print(train)
-    print(test)
+    print(val)
     print("Data split and saved.")
