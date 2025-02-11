@@ -26,3 +26,14 @@ cargo run --release
 
 ![data](data/data_plot.png)
 
+## Train & Test
+
+```bash
+# Activate virtual environment
+source .venv/bin/activate
+
+# Train & Draw a plot
+python main.py
+```
+
+![plot](plot.png)
