@@ -1,5 +1,4 @@
 import torch
-import torch.functional as F
 from torch.utils.data import TensorDataset, DataLoader
 import polars as pl
 import numpy as np
